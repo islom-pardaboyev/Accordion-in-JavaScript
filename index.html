@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="accordion">
+        <!-- list one -->
+        <div class="contentBx">
+            <div class="label">List One</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non sapiente, quasi pariatur iusto illum dolore modi ea voluptas id ratione cum aliquam explicabo maiores possimus delectus fuga at deleniti.</p>
+            </div>
+        </div>
+        <!-- list two -->
+        <div class="contentBx">
+            <div class="label">List Two</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non sapiente, quasi pariatur iusto illum dolore modi ea voluptas id ratione cum aliquam explicabo maiores possimus delectus fuga at deleniti.</p>
+            </div>
+        </div>
+        <!-- list three -->
+        <div class="contentBx">
+            <div class="label">List Three</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non sapiente, quasi pariatur iusto illum dolore modi ea voluptas id ratione cum aliquam explicabo maiores possimus delectus fuga at deleniti.</p>
+            </div>
+        </div>
+        <!-- list four -->
+        <div class="contentBx">
+            <div class="label">List Four</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non sapiente, quasi pariatur iusto illum dolore modi ea voluptas id ratione cum aliquam explicabo maiores possimus delectus fuga at deleniti.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accordion = document.querySelectorAll('.contentBx')
+
+        for(i = 0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
