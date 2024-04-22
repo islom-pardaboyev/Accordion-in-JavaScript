@@ -1,4 +1,4 @@
-# Random Quotes
+# Accordions
 
 ![Screenshot](./screenshot.png)
 
